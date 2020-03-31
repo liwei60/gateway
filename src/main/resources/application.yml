@@ -1,0 +1,14 @@
+server:
+  port: 8080
+zuul:
+  add-host-header: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone : http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+spring:
+  application:
+    name : gateway
